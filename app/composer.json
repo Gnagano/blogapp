@@ -1,0 +1,13 @@
+{
+    "name": "php_ci_book/blogapp",
+    "authors": [
+        {
+            "name": "gano",
+            "email": "gen.nagano.cc20120701@gmail.com"
+        }
+    ],
+    "require": {
+        "cakephp/cakephp": "2.5.*",
+        "josegonzalez/cakephp-environments": "1.0.0"
+    }
+}
