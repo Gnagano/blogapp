@@ -7,9 +7,9 @@ Environment::configure('ci', false, [
 	'MYSQL_TEST_DB_NAME' => 'test_blog',
 	'MYSQL_PREFIX' => '',
 ]
-//, function() {
-//	CakePlugin::load('Bdd');
+, function() {
+	CakePlugin::load('Bdd');
 //	CakePlugin::load('Fabricate');
 //	Configure::write('app.disableValidatePost', true);
-//}
+	}
 );
