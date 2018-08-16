@@ -1,5 +1,6 @@
 <?php
 App::uses('Post', 'Model');
+App::uses('Post','Fabricate.Lib');
 
 /**
  * Post Test Case
@@ -41,8 +42,7 @@ class PostTest extends CakeTestCase {
 	 * @dataProvider exampleValidationErrors
 	 */
   public function testバリデーションエラー($column, $value, $message){
-  	$default = ['title' => 'タイトル', 'body' => '本文'];
-  	$this->Post->create(array_merge($default, [$column => $value]));
+  	$post = Fabricate::build('Post',[$column=>$value]);
   	$this->assertFalse($this->Post->validates());
   	$this->assertEquals([$message], $this->Post->validationErrors[$column]);
 	}

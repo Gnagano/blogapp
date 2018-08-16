@@ -1,5 +1,6 @@
 <?php
 App::uses('PostsController', 'Controller');
+App::uses('Fabricate','Fabricate.Lib');
 
 /**
  * PostsController Test Case
@@ -27,14 +28,12 @@ class PostsControllerTest extends ControllerTestCase {
 	}
 
 	public function testIndexアクションではページングの結果がpostsにセットされること(){
-		$data = [
-			['Posts' => ['id' => 1, 'title' => 'Title1', 'body' => 'Body1']],
-		];
-		$this->controller->Paginator->expects($this->once())
-			   ->method('paginate')->will($this->returnValue($data));
-		$vars = $this->testAction('/user/blog',['method' => 'get', 'return' => 'vars']);
 
-		$this->assertEquals($data,$vars['posts']);
+		$post = Fabricate::build('Post');
+		$this->controller->Paginator->expects($this->once())
+			   ->method('paginate')->will($this->returnValue($post->data));
+		$vars = $this->testAction('/user/blog',['method' => 'get', 'return' => 'vars']);
+		$this->assertEquals($post->data,$vars['posts']);
 	}
 
 	public function testAddアクションで保存が失敗したときメッセージがセットされること(){
@@ -50,7 +49,7 @@ class PostsControllerTest extends ControllerTestCase {
 			  ->method('save')->will($this->returnValue(true));
 
 		$this->controller->Session->expects($this->once())
-			   ->method('setFlash')->with($this->equaloTo('新しい記事を受け付けました。'));
+			   ->method('setFlash')->with($this->equalTo('新しい記事を受け付けました。'));
 		$this->controller->expects($this->once())
 			   ->method('redirect')->with($this->equalTo(['action' => 'index']));
 		$this->testAction('/blogs/new',['method' => 'post', 'data' => ['title' => 'Title1', 'body' => 'Body1']]);
