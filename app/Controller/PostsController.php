@@ -8,13 +8,20 @@ class PostsController extends AppController {
 
 	public $components = ['Paginator', 'RequestHandler', 'Session'];
 
+	public $paginate = [
+		  'limit' => 5,
+			'order' => [ 'Post.id' => 'desc']
+	];
+
 	public $helpers = [
 		'Html' => ['className' => 'BoostCake.BoostCakeHtml'],
 		'Form' => ['className' => 'BoostCake.BoostCakeForm'],
 	];
 
 	public function index(){
-		$this->set('posts', $this->Paginator->paginate());
+		$this->Paginator->settings = $this->paginate;
+		$posts = $this->Paginator->paginate('Post');
+		$this->set(compact('posts'));
 	}
 
 	public function add(){
@@ -30,4 +37,5 @@ class PostsController extends AppController {
 			}
 		}
 	}
+
 }
