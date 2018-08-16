@@ -1,6 +1,6 @@
 <?php
 Environment::configure('ci', false, [
-	'MYSQL_DB_HOST' => 'localhost',
+	'MYSQL_DB_HOST' => '127.0.0.1',
 	'MYSQL_USERNAME' => 'webapp',
 	'MYSQL_PASSWORD' => 'passw0rd',
 	'MYSQL_DB_NAME' => 'test_blog',
@@ -9,7 +9,7 @@ Environment::configure('ci', false, [
 ]
 , function() {
 	CakePlugin::load('Bdd');
-//	CakePlugin::load('Fabricate');
+	CakePlugin::load('Fabricate');
 //	Configure::write('app.disableValidatePost', true);
 	}
 );

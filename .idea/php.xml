@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/app/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/vendor/cakephp/cakephp" />
+      <path value="$PROJECT_DIR$/app/vendor/pear/pear_exception" />
+      <path value="$PROJECT_DIR$/app/vendor/pear/console_commandline" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/app/vendor/behat/mink-extension" />
+      <path value="$PROJECT_DIR$/app/vendor/behat/common-contexts" />
+      <path value="$PROJECT_DIR$/app/vendor/behat/mink" />
+      <path value="$PROJECT_DIR$/app/vendor/behat/behat" />
+      <path value="$PROJECT_DIR$/app/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/app/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/app/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/app/vendor/sizuhiko/spec-php" />
+      <path value="$PROJECT_DIR$/app/vendor/behat/mink-goutte-driver" />
+      <path value="$PROJECT_DIR$/app/vendor/behat/mink-browserkit-driver" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/app/vendor/fabpot/goutte" />
+      <path value="$PROJECT_DIR$/app/vendor/guzzle/common" />
+      <path value="$PROJECT_DIR$/app/vendor/guzzle/parser" />
+      <path value="$PROJECT_DIR$/app/vendor/guzzle/stream" />
+      <path value="$PROJECT_DIR$/app/vendor/guzzle/http" />
+      <path value="$PROJECT_DIR$/app/vendor/fzaninotto/faker" />
+    </include_path>
+  </component>
+</project>

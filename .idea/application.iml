@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/behat/behat" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/behat/common-contexts" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/behat/gherkin" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/behat/mink" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/behat/mink-browserkit-driver" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/behat/mink-extension" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/behat/mink-goutte-driver" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/cakephp/cakephp" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/fabpot/goutte" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/guzzle/common" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/guzzle/http" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/guzzle/parser" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/guzzle/stream" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/pear/console_commandline" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/pear/pear_exception" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/php-token-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/phpunit-mock-objects" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/sizuhiko/spec-php" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/browser-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/config" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/dependency-injection" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/dom-crawler" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/yaml" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

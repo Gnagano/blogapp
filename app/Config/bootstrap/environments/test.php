@@ -1,6 +1,6 @@
 <?php
 Environment::configure('development', true, [
-	'MYSQL_DB_HOST' => 'localhost',
+	'MYSQL_DB_HOST' => '127.0.0.1',
 	'MYSQL_USERNAME' => 'webapp',
 	'MYSQL_PASSWORD' => 'passw0rd',
 	'MYSQL_DB_NAME' => 'blog',
@@ -9,6 +9,6 @@ Environment::configure('development', true, [
 ] 
 ,function() {
 	CakePlugin::load('Bdd');
-//	CakePlugin::load('Fabricate');
+	CakePlugin::load('Fabricate');
 }
 );
