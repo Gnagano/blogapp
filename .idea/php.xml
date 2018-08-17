@@ -44,6 +44,14 @@
       <path value="$PROJECT_DIR$/app/vendor/guzzle/stream" />
       <path value="$PROJECT_DIR$/app/vendor/guzzle/http" />
       <path value="$PROJECT_DIR$/app/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/app/vendor/phing/phing" />
+      <path value="$PROJECT_DIR$/app/vendor/phpmd/phpmd" />
+      <path value="$PROJECT_DIR$/app/vendor/pdepend/pdepend" />
+      <path value="$PROJECT_DIR$/app/vendor/theseer/fdomdocument" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/phpcpd" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/finder-facade" />
+      <path value="$PROJECT_DIR$/app/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/app/vendor/squizlabs/php_codesniffer" />
     </include_path>
   </component>
 </project>

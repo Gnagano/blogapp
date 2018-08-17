@@ -18,8 +18,11 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/guzzle/parser" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/guzzle/stream" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/pdepend/pdepend" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/pear/console_commandline" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/pear/pear_exception" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/phing/phing" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpmd/phpmd" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/php-code-coverage" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/php-file-iterator" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/php-text-template" />
@@ -28,7 +31,11 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/phpunit/phpunit-mock-objects" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/sebastian/finder-facade" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/sebastian/phpcpd" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/sebastian/version" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/sizuhiko/spec-php" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/squizlabs/php_codesniffer" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/browser-kit" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/config" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/console" />
@@ -44,6 +51,7 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/process" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/translation" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/theseer/fdomdocument" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
