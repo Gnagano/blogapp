@@ -11,7 +11,7 @@
   <!--<property name="vendorbindir" value="${appdir}/Vendor/bin" />-->
 
   <!-- Build(1) -->
-  <target name="build" depends="prepare,caketest"/> <!--behat,phpcs,phpmd,phpcpd,phpdoc"/>-->
+  <target name="build" depends="prepare,caketest,behat"/> <!--behat,phpcs,phpmd,phpcpd,phpdoc"/>-->
 
   <!-- Prepare(2) -->
   <target name="prepare" description="Prepare for build">
@@ -34,4 +34,16 @@
     </exec>
   </target>
   <!--</target>-->
+
+  <!-- CakePHP acceptance test with Behat -->
+  <target name="behat" description="Run CakePHP acceptance test with Behat">
+    <exec command="find ${appdir}/tmp -type d -print | xargs chmod 777" escape="false" />
+    <exec dir="${appdir}" executable="${appdir}/Console/cake" output="${logdir}/behat.log" checkreturn="true">
+      <arg line="Bdd.story" />
+      <arg line="--format=junit" />
+      <arg line="--out=${appdir}/reports" />
+    </exec>
+  </target>
+  <!--</target>-->
+
 </project>
