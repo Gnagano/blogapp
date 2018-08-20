@@ -5,3 +5,4 @@ app/Vendor
 app/reports
 app/Config/bootstrap/environments/production.php
 
+phing.log

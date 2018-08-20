@@ -1,7 +1,7 @@
-<phpunit bootstrap="./vendor/phpunit/bootstrap.php">
+<phpunit bootstrap="Test/bootstrap.php">
   <logging>
-    <log type="coverage-clover" target="./reports/coverage.xml" />
-    <log type="junit" target="./reports/unittest.xml" />
+    <log type="coverage-clover" target="reports/coverage.xml" />
+    <log type="junit" target="reports/unittest.xml" />
   </logging>
 
   <filter>
