@@ -52,6 +52,7 @@
       <path value="$PROJECT_DIR$/app/vendor/sebastian/finder-facade" />
       <path value="$PROJECT_DIR$/app/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/app/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/app/Vendor/cakephp/cakephp-codesniffer" />
     </include_path>
   </component>
 </project>

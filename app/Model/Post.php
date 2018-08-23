@@ -1,16 +1,31 @@
 <?php
 App::uses('AppModel', 'Model');
+
 /**
  * Post Model
+ *
+ * ブログ記事用モデルです
+ *
+ * @copyright php_ci_book
+ * @link https://github.com/gano2018/blogapp/blob/master/app/Model/Post.php
+ * @since 1.0
+ * @author gano <test.develop.gano@gmail.com>
  *
  */
 class Post extends AppModel {
 
-/**
- * Validation rules
- *
- * @var array
- */
+	/**
+	 * 一覧表示時のタイトルに使用するカラム名
+	 *
+	 * @var string
+	 */
+	public $displayField = 'title';
+
+	/**
+	 * Validation rules
+	 *
+	 * @var array
+	 */
 	public $validate = [
 		'title' => [
 			'notEmpty'  => [
@@ -21,31 +36,6 @@ class Post extends AppModel {
 				'rule'    => ['maxLength', '255'],
 				'message' => 'タイトルは255文字以内で入力してください',
 			],
-					//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 		],
-//		'body' => array(
-//			'notEmpty' => array(
-//				'rule' => array('notEmpty'),
-//				//'message' => 'Your custom message here',
-//				//'allowEmpty' => false,
-//				//'required' => false,
-//				//'last' => false, // Stop validation after this rule
-//				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-//			),
-//		),
-//		'creaeted' => array(
-//			'notEmpty' => array(
-//				'rule' => array('notEmpty'),
-//				//'message' => 'Your custom message here',
-//				//'allowEmpty' => false,
-//				//'required' => false,
-//				//'last' => false, // Stop validation after this rule
-//				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-//			),
-//		),
 	];
 }
