@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c506ba2f13ef6e657fcd2b707cd71d4",
+    "content-hash": "6f7ddd8a30342e9d51438733c6a66c70",
     "packages": [
         {
             "name": "cakedc/migrations",
