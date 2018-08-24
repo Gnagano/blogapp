@@ -1,0 +1,106 @@
+# Logfile created on 2018-08-24 07:42:21 +0000 by logger.rb/61378
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-24 07:42:21 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [2ea91c59] Running /usr/bin/env mkdir -p /tmp as vagrant@192.168.33.20
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-24 07:42:44 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [aa98d4de] Running /usr/bin/env mkdir -p /tmp as vagrant@192.168.33.200
+  INFO [edc417e2] Finished in 0.581 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-blogapp-production-vagrant.sh 100.0%
+  INFO [dfb16904] Running /usr/bin/env chmod 700 /tmp/git-ssh-blogapp-production-vagrant.sh as vagrant@192.168.33.200
+  INFO [578f9aed] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [3f811313] Running /usr/bin/env git ls-remote git@github.com:phpcibook/blogapp.git HEAD as vagrant@192.168.33.200
+  INFO [29396add] Finished in 2.711 seconds with exit status 0 (successful).
+  INFO [666b9335] Running /usr/bin/env sudo mkdir -p /var/www/application as vagrant@192.168.33.200
+  INFO [6b49ad30] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [9000917a] Running /usr/bin/env sudo chown vagrant:vagrant /var/www/application as vagrant@192.168.33.200
+  INFO [8d9acb65] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [87f01dfc] Running /usr/bin/env mkdir -p /var/www/application/shared /var/www/application/releases as vagrant@192.168.33.200
+  INFO [023c2bfe] Finished in 0.039 seconds with exit status 0 (successful).
+  INFO [18db95f7] Running /usr/bin/env mkdir -p /var/www/application/shared/tmp/cache /var/www/application/shared/tmp/cache/models /var/www/application/shared/tmp/cache/persistent /var/www/application/shared/tmp/cache/views /var/www/application/shared/tmp/logs /var/www/application/shared/tmp/sessions /var/www/application/shared/tmp/tests as vagrant@192.168.33.200
+  INFO [7877347e] Finished in 0.038 seconds with exit status 0 (successful).
+  INFO [4c7e28ec] Running /usr/bin/env sudo find /var/www/application/shared -type d -print | xargs chmod 777 as vagrant@192.168.33.200
+  INFO [2de6cabf] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [f66d156f] Running /usr/bin/env mkdir -p /var/www/application/shared as vagrant@192.168.33.200
+  INFO [c52af984] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO Uploading ./config/deploy/production.php 100.0%
+  INFO [f1a56e87] Running /usr/bin/env git clone --mirror git@github.com:phpcibook/blogapp.git /var/www/application/repo as vagrant@192.168.33.200
+  INFO [25bee317] Finished in 3.627 seconds with exit status 0 (successful).
+  INFO [42bbb7b5] Running /usr/bin/env git remote set-url origin git@github.com:phpcibook/blogapp.git as vagrant@192.168.33.200
+  INFO [179b3f02] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [ed813a06] Running /usr/bin/env git remote update --prune as vagrant@192.168.33.200
+  INFO [cbcd44f8] Finished in 2.859 seconds with exit status 0 (successful).
+  INFO [398f0f84] Running /usr/bin/env mkdir -p /var/www/application/releases/20180824074248 as vagrant@192.168.33.200
+  INFO [430b679e] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [45b70aed] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/application/releases/20180824074248 as vagrant@192.168.33.200
+  INFO [248761a7] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [437c6db9] Running /usr/bin/env echo "29ff809ccd86f430e505eb3766ccc16889730e3e" > REVISION as vagrant@192.168.33.200
+  INFO [82cf5c5d] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [85b1f16c] Running /usr/bin/env ln -s /var/www/application/shared/production.php /var/www/application/releases/20180824074248/app/Config/bootstrap/environments/production.php as vagrant@192.168.33.200
+  INFO [c2b51b04] Finished in 0.035 seconds with exit status 0 (successful).
+  INFO [dde12be2] Running /usr/bin/env sudo rm -rf /var/www/application/releases/20180824074248/app/tmp as vagrant@192.168.33.200
+  INFO [ae0edf6c] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [0321e67c] Running /usr/bin/env ln -s /var/www/application/shared/tmp /var/www/application/releases/20180824074248/app/tmp as vagrant@192.168.33.200
+  INFO [1c2ce7cc] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [6fe89bef] Running /usr/bin/env composer --working-dir=/var/www/application/releases/20180824074248/app --no-dev install as vagrant@192.168.33.200
+  INFO [d9754c5e] Finished in 8.003 seconds with exit status 0 (successful).
+  INFO [b0e6cd2f] Running env CAKE_ENV=production /var/www/application/releases/20180824074248/app/Console/cake Migrations.migration run all -p as vagrant@192.168.33.200
+  INFO [cf2867f8] Finished in 0.239 seconds with exit status 0 (successful).
+  INFO [147ecf20] Running /usr/bin/env ln -s /var/www/application/releases/20180824074248 /var/www/application/releases/current as vagrant@192.168.33.200
+  INFO [3f27b392] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [88d87dc4] Running /usr/bin/env mv /var/www/application/releases/current /var/www/application as vagrant@192.168.33.200
+  INFO [4573dd9a] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [c1d2ca11] Running /usr/bin/env sudo service php5-fpm restart as vagrant@192.168.33.200
+  INFO [2a3cfd80] Finished in 0.133 seconds with exit status 0 (successful).
+  INFO [0a957b13] Running /usr/bin/env echo "Branch master (at 29ff809ccd86f430e505eb3766ccc16889730e3e) deployed as release 20180824074248 by vagrant" >> /var/www/application/revisions.log as vagrant@192.168.33.200
+  INFO [ac04c8c7] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-24 07:45:17 +0000 cap production deploy:rollback
+  INFO ---------------------------------------------------------------------------
+  INFO [037299d5] Running /usr/bin/env mkdir -p /tmp as vagrant@192.168.33.200
+  INFO [3ea9206e] Finished in 0.451 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-blogapp-production-vagrant.sh 100.0%
+  INFO [7809572a] Running /usr/bin/env chmod 700 /tmp/git-ssh-blogapp-production-vagrant.sh as vagrant@192.168.33.200
+  INFO [aef8e483] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [df7af339] Running /usr/bin/env git ls-remote git@github.com:phpcibook/blogapp.git HEAD as vagrant@192.168.33.200
+  INFO [52a5cfe5] Finished in 3.024 seconds with exit status 0 (successful).
+  INFO [5562b1e1] Running /usr/bin/env sudo mkdir -p /var/www/application as vagrant@192.168.33.200
+  INFO [7ce5e7bf] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [6ef1c9a7] Running /usr/bin/env sudo chown vagrant:vagrant /var/www/application as vagrant@192.168.33.200
+  INFO [09932b80] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [fc1993c4] Running /usr/bin/env mkdir -p /var/www/application/shared /var/www/application/releases as vagrant@192.168.33.200
+  INFO [69b69674] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [e84e2b25] Running /usr/bin/env mkdir -p /var/www/application/shared/tmp/cache /var/www/application/shared/tmp/cache/models /var/www/application/shared/tmp/cache/persistent /var/www/application/shared/tmp/cache/views /var/www/application/shared/tmp/logs /var/www/application/shared/tmp/sessions /var/www/application/shared/tmp/tests as vagrant@192.168.33.200
+  INFO [69e76a6e] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [bb9543eb] Running /usr/bin/env sudo find /var/www/application/shared -type d -print | xargs chmod 777 as vagrant@192.168.33.200
+  INFO [44c479d9] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [dda7e2f2] Running /usr/bin/env mkdir -p /var/www/application/shared as vagrant@192.168.33.200
+  INFO [abaf0dd4] Finished in 0.040 seconds with exit status 0 (successful).
+  INFO Uploading ./config/deploy/production.php 100.0%
+ ERROR There are no older releases to rollback to
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-24 09:00:32 +0000 cap production deploy:rollback
+  INFO ---------------------------------------------------------------------------
+  INFO [55f2ce0c] Running /usr/bin/env mkdir -p /tmp as vagrant@192.168.33.200
+  INFO [1a41b4bf] Finished in 0.718 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-blogapp-production-vagrant.sh 100.0%
+  INFO [f5e87542] Running /usr/bin/env chmod 700 /tmp/git-ssh-blogapp-production-vagrant.sh as vagrant@192.168.33.200
+  INFO [116c5ff2] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [22d7bc3d] Running /usr/bin/env git ls-remote git@github.com:phpcibook/blogapp.git HEAD as vagrant@192.168.33.200
+  INFO [935e7d0e] Finished in 2.602 seconds with exit status 0 (successful).
+  INFO [d7cf5828] Running /usr/bin/env sudo mkdir -p /var/www/application as vagrant@192.168.33.200
+  INFO [da083f4b] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [eea11dd2] Running /usr/bin/env sudo chown vagrant:vagrant /var/www/application as vagrant@192.168.33.200
+  INFO [99be4cba] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [f7eefa86] Running /usr/bin/env mkdir -p /var/www/application/shared /var/www/application/releases as vagrant@192.168.33.200
+  INFO [2fe61574] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [b0e91ebf] Running /usr/bin/env mkdir -p /var/www/application/shared/tmp/cache /var/www/application/shared/tmp/cache/models /var/www/application/shared/tmp/cache/persistent /var/www/application/shared/tmp/cache/views /var/www/application/shared/tmp/logs /var/www/application/shared/tmp/sessions /var/www/application/shared/tmp/tests as vagrant@192.168.33.200
+  INFO [4075ba09] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [255d9a61] Running /usr/bin/env sudo find /var/www/application/shared -type d -print | xargs chmod 777 as vagrant@192.168.33.200
+  INFO [02c84744] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [6b4d1b47] Running /usr/bin/env mkdir -p /var/www/application/shared as vagrant@192.168.33.200
+  INFO [a391bee0] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO Uploading ./config/deploy/production.php 100.0%
+ ERROR There are no older releases to rollback to

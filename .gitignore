@@ -6,3 +6,4 @@ app/reports
 app/Config/bootstrap/environments/production.php
 
 phing.log
+deploy/config/deploy/production.php
